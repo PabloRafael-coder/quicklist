@@ -12,12 +12,34 @@
 </head>
 
 <body>
-    <header>
-        <div class="">
-            <img src="./assets/logoheader.svg" alt="logo do site" title="logo da imagem">
-            <h1>quicklist</h1>
-        </div>
+    <header class="header">
+        <img src="./assets/logoheader.svg" alt="logo do site" title="logo da imagem">
+        <h1 class="header__title">quicklist</h1>
     </header>
+    <main>
+        <section class="section">
+            <div class="section__container">
+                <a href="" class="section__link">
+                    <- Voltar </a>
+                        <h2 class="section__subtitle">Compras da Semana</h2>
+                        <form class="section__form">
+                            <input type="text" class="section__input" name="" id=""
+                                placeholder="Adicionar um novo item" />
+                            <button type="submit" class="section__button">Adicionar Item</button>
+                        </form>
+            </div>
+            <div class="section__list">
+                <ul>
+                    <li class="section__item">
+                        <input type="checkbox">
+                        <p class="section__text">Pão de forma</p>
+                        <button class="section__delete-button"><img class="section__trashImage" src="./assets/trash.svg"
+                                alt=""></button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
     <script src="scripts.js"></script>
 </body>
 
