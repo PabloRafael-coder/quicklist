@@ -62,7 +62,7 @@ body {
     margin-top: 2rem;
 }
 
-.section__input {
+.section__text-input {
     width: 28rem;
     border-radius: 12px;
     padding: 0 18px;
@@ -71,8 +71,17 @@ body {
     border: 2px solid var(--border-primary);
     background: var(--background-secondary);
     color: var(--content-tertiary);
+    outline: transparent;
+}
 
-    outline: none;
+.section__text-input:hover {
+    border: none;
+    box-shadow: 0 0 0 2px var(--border-hover);
+}
+
+.section__text-input:active {
+    border: none;
+    box-shadow: 0 0 0 2px var(--color-brand);
 }
 
 .section__button {
@@ -82,6 +91,7 @@ body {
     background: var(--color-brand);
     font-size: 1rem;
     color: var(--content-always-white);
+    cursor: pointer;
 }
 
 .section__list {
@@ -102,6 +112,24 @@ body {
     color: var(--content-secondary);
     border-radius: 12px;
 }
+
+.section__checked-input{
+   appearance: none;
+   border: 1px solid var(--border-primary);
+   width: 16px;
+   height: 16px;
+   border-radius: 5px;
+}
+
+.section__checked-input:checked{
+    background: var(--color-brand);
+    background-image: url(./assets/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+}
+
 
 .section__text {
     width: 100%;
