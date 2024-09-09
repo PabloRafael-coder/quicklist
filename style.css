@@ -107,6 +107,7 @@ body {
     gap: 12px;
     width: 627px;
     height: 49px;
+    margin-top: 15px;
 
     background: var(--background-secondary);
     color: var(--content-secondary);
@@ -141,6 +142,10 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    background-image: url(./assets/trash.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
 }
 
 .section__trashImage {
