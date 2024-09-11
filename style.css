@@ -79,12 +79,14 @@ body {
     box-shadow: 0 0 0 2px var(--border-hover);
 }
 
-.section__text-input:active {
+.section__text-input:focus{
     border: none;
     box-shadow: 0 0 0 2px var(--color-brand);
+    color: var(--content-primary);
+
 }
 
-.section__button {
+.section__button-add {
     border-radius: 12px;
     padding: 0 1.5rem;
     border: none;
@@ -92,6 +94,10 @@ body {
     font-size: 1rem;
     color: var(--content-always-white);
     cursor: pointer;
+}
+
+.section__button-add:hover{
+    background: var(--color-brand-hover);
 }
 
 .section__list {
@@ -122,6 +128,10 @@ body {
    border-radius: 5px;
 }
 
+.section__checked-input:hover{
+    border: 1px solid var(--border-hover);
+}
+
 .section__checked-input:checked{
     background: var(--color-brand);
     background-image: url(./assets/checked.svg);
@@ -130,7 +140,6 @@ body {
     background-size: contain;
     border: none;
 }
-
 
 .section__text {
     width: 100%;
@@ -151,4 +160,17 @@ body {
 .section__trashImage {
     width: 16px;
     height: 16px;
+}
+
+.section__item-delete {
+    width: 627px;
+    height: 44px;
+    display: flex;
+    gap: 4px;
+    padding: 12px;
+    border-radius: 12px;
+    justify-content: space-between;
+    background: var(--color-danger);
+    color: var(--content-always-white);
+    margin-top: 3rem;
 }
