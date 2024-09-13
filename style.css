@@ -40,10 +40,11 @@ body {
 
 .section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-top: calc(127px - 25px);
+    width: 100%;
 }
+
 
 .section__link {
     color: var(--color-brand);
@@ -55,7 +56,6 @@ body {
 }
 
 .section__form {
-    max-width: 627px;
     height: 2.75rem;
     display: flex;
     gap: 1rem;
@@ -165,7 +165,7 @@ body {
 .section__item-delete {
     width: 627px;
     height: 44px;
-    display: flex;
+    display: none;
     gap: 4px;
     padding: 12px;
     border-radius: 12px;
@@ -173,4 +173,8 @@ body {
     background: var(--color-danger);
     color: var(--content-always-white);
     margin-top: 3rem;
+}
+
+.section__item-delete-alert {
+    display: flex;
 }
