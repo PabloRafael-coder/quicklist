@@ -1,0 +1,20 @@
+.section {
+    width: min(375px, 100% - 1.5rem * 2);
+    margin-inline: auto;
+    margin-top: 2.5rem;
+}
+
+.section__link {
+    color: var(--color-brand);
+}
+
+.section__subtitle {
+    color: var(--content-primary);
+    margin-top: calc(159px - 127px);
+}
+
+@media (width >= 30rem) {
+    .section {
+        width: min(39.18rem, 100% - 1.5rem * 2);
+    }
+}

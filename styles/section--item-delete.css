@@ -1,0 +1,21 @@
+.section__item-delete--alert {
+    width: 100%;
+    gap: .5rem;
+    padding: 12px;
+    border-radius: 12px;
+    background: var(--color-danger);
+    color: var(--content-always-white);
+    margin-top: 3rem;
+}
+
+.section__image-cancel {
+    margin-inline-start: auto;
+}
+
+.section__item-delete--alert {
+    display: none;
+}
+
+.item-deleted {
+    display: flex;
+}

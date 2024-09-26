@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    padding-top: 25px;
+}
+
+.header__title {
+    color: var(--content-secondary);
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (width >= 30rem) {
+    .desktop-only {
+        display: flex;
+    }
+    
+}

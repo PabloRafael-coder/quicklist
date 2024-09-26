@@ -1,0 +1,51 @@
+.section__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap: 1rem;
+}
+
+.section__input-text {
+    width: 100%;
+    height: 2.75rem;
+    border-radius: 12px;
+    padding-inline: 0.88rem;
+    font-size: 1rem;
+
+    border: 2px solid var(--border-primary);
+    background: var(--background-secondary);
+    color: var(--content-tertiary);
+    outline: transparent;
+}
+
+.section__input-text:hover {
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px var(--border-hover);
+}
+
+.section__input-text:focus {
+    border: none;
+    box-shadow: 0 0 0 2px var(--color-brand);
+    color: var(--content-primary);
+
+}
+
+.section__button-add {
+    width: 100%;
+    height: 2.75rem;
+    border-radius: 12px;
+    padding: 0 1.5rem;
+    border: none;
+    background: var(--color-brand);
+    font-size: 1rem;
+    color: var(--content-always-white);
+    cursor: pointer;
+}
+
+.section__button-add:hover {
+    background: var(--color-brand-hover);
+}
+
+.section__list {
+    margin-top: 2.5rem;
+}
