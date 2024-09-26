@@ -5,39 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quicklist</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header desktop-only">
         <img src="./assets/logoheader.svg" alt="logo do site" title="logo da imagem">
         <h1 class="header__title">quicklist</h1>
     </header>
     <main>
         <section class="section">
-            <div class="section__container">
-                <a href="" class="section__link">
-                    <- Voltar </a>
-                        <h2 class="section__subtitle">Compras da Semana</h2>
-                        <form class="section__form" id="form">
-                            <input type="text" class="section__text-input" name="" id="title"
-                                placeholder="Adicionar um novo item" />
-                            <button type="submit" id="button-submit" class="section__button-add">Adicionar
-                                Item</button>
-                        </form>
-            </div>
-            <div class="section__list">
-                <ul id="section__ul">
-                </ul>
-            </div>
-            <div class="section__item-delete">
-                <img src="./assets/alerta.svg" alt="">
-                <p>O item foi removido da lista</p>
-                <img src="./assets/cancel.svg" alt="">
-            </div>
+            <a href="" class="section__link">
+                <- Voltar </a>
+                    <h1 class="section__subtitle">Compras da Semana</h1>
+                    <form class="section__form" id="form">
+                        <input type="text" class="section__input-text" name="" id="title"
+                            placeholder="Adicionar um novo item" />
+                        <button type="submit" id="button-submit" class="section__button-add">Adicionar
+                            Item</button>
+                    </form>
+                    <div class="section__list">
+                        <ul id="section__ul">
+
+                        </ul>
+                    </div>
+                    <div id="sectionAlert" class="section__item-delete--alert">
+                        <img src="./assets/alerta.svg" alt="">
+                        <p>O item foi removido da lista</p>
+                        <img class="section__image-cancel" src="./assets/cancel.svg" alt="">
+                    </div>
         </section>
     </main>
     <script src="scripts.js"></script>
