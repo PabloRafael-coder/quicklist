@@ -4,7 +4,6 @@ const ul = document.getElementById("section__ul")
 const button = document.getElementById("button-delete")
 const sectionAlert = document.getElementById("sectionAlert")
 
-
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -31,7 +30,6 @@ function createNewElement() {
     createLi.append(createInput, createElementP, newButton)
     ul.appendChild(createLi)
 
-
     newButton.addEventListener("click", () => {
         ul.removeChild(createLi)
 
@@ -40,10 +38,10 @@ function createNewElement() {
 }
 
 function deletedItemAlert() {
-    sectionAlert.classList.add("section__item-delete-alert")
+    sectionAlert.classList.add("item-deleted")
 
     setTimeout(() => {
-        sectionAlert.classList.remove("section__item-delete-alert")
+        sectionAlert.classList.remove("item-deleted")
     }, 2000);
 }
 
